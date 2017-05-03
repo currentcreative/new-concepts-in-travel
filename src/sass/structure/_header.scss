@@ -1,0 +1,148 @@
+//
+//-- Header
+//
+
+/* MOBILE MENU */
+.page-nav__hamburger {
+	display:none !important;
+}
+
+/* SOCIAL */
+.fa-twitter {
+    background: #3399FF;
+    font-size: 22px !important;
+    width: 32px !important;
+    height: 32px !important;
+    color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: .25em;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.fa-facebook {
+    background: #0066CC;
+    font-size: 22px !important;
+    width: 32px !important;
+    height: 32px !important;
+    color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: .25em;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.fa-twitter:hover,
+.fa-facebook:hover {
+	background: #999;
+}
+
+
+/* PAGE HEADER */
+.travel-top {
+	width: 100% !important;
+}
+.page-header {
+	border-top:5px solid $color-base;
+	text-align: right;
+	z-index: 10;
+}
+
+.page-header__phone {
+	display: block;
+	text-align: right;
+	clear:both;
+	padding: 1em;
+}
+
+.page-nav__ul {
+  font-size: 0;
+  margin: 2rem;
+  display: flex;
+  width:700px;
+  margin: 40px auto;
+}
+
+.page-nav__li {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 34px;
+}
+
+.travel-border {
+  border-top: 2px solid $color-base;
+  border-bottom: 2px solid $color-base;
+	  &:first-of-type {
+		border-radius: 5px 0 0 5px;
+	    border-left: 2px solid $color-base;
+	  }
+
+	  &:first-of-type a.page-nav__item {
+		background: $color-base;
+	    color: white;
+	    cursor: default;
+		position:relative;
+		margin-right: 16px;
+			&:hover {
+				opacity: 1;
+			}
+	  }
+	  &:first-of-type a.page-nav__item::after {
+		  content:"";
+		  width: 0;
+		  height: 0;
+		  position: absolute;
+		  left:100%;
+		  top: 0;
+		  border-top: 16px solid transparent;
+		  border-bottom: 16px solid transparent;
+		  border-left: 16px solid $color-base;
+
+	  }
+}
+
+.travel-border + li:not(.travel-border) {
+  border-left: 2px solid $color-base;
+}
+
+a.page-nav__item {
+	font-weight: 400;
+	display: block;
+    background: transparent;
+	color: #515153;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.2s ease;
+	padding: 0 1em;
+	margin: 0;
+	height: 34px;
+	line-height: 34px;
+	cursor: pointer;
+
+		&:hover {
+			color: $color-base;
+		}
+}
+
+.travel-border a {
+	font-weight: 600;
+	height: 32px;
+	line-height: 32px;
+}
+
+.page-nav__hamburger {
+	display: inline-block;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	margin-bottom: 1em;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+
+}

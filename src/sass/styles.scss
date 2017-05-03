@@ -1,0 +1,37 @@
+//
+// Personal Portfolio
+// Main SCSS file
+//
+
+// load config
+@import 'config/config';
+@import 'config/sticky_footer';
+
+// load mixins
+@import 'mixins/mixins_general';
+@import 'mixins/mixins_breakpoints';
+@import 'mixins/mixins_grids';
+
+// load base
+@import 'base/reset';
+@import 'base/helper_classes';
+@import 'base/typography';
+
+// load structure
+@import 'structure/header';
+@import 'structure/sections';
+@import 'structure/footer';
+
+// load modules
+@import 'modules/grids';
+@import 'modules/carousel';
+
+// load pages
+@import 'pages/about';
+@import 'pages/blog';
+@import 'pages/contact';
+@import 'pages/corporate';
+@import 'pages/homepage';
+@import 'pages/leisure';
+@import 'pages/specialty';
+@import 'pages/travel';
