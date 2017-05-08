@@ -2,17 +2,53 @@
 //-- Bootstrap Carousel
 //
 
-/* My Customized ID styles */
-.glyphicon {
-  font-size: 16px !important;
+/* Carousel Descriptions */
+.carousel--description-h2 {
+    font-size: 2em !important;
+    text-align: left !important;
 
-   @media only screen and (min-height:960px) {
-    font-size: 3em !important;
-   }
+    @media only screen and (min-width: 731px) {
+        font-size: 7em !important;
+    }
 }
+.carousel--description-p {
+    font-size: 1em !important;
+    text-align: left !important;
+    margin-bottom: -2px !important;
+
+    @media only screen and (min-width: 731px) {
+        font-size: 2.2em !important;
+    }
+}
+
+/* Adjust for Cell Phones */
+@media only screen and (max-width: 730px) {
+
+    .carousel-inner .container {
+        background: #444 !important;
+        margin-top: -4px;
+        padding-top: 15px;
+    }
+
+    .carousel-caption {
+        position:relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100%;
+        padding: 5% 10%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    span.glyphicon {
+        margin-top: 20px !important;
+    }
+}
+
+/* My Customized ID styles */
 .carousel-control.right,
 .carousel-control.left {
-  background-image: none !important;
+  /* background-image: none !important; */
 }
 .carousel-control {
   opacity: 1 !important;
