@@ -41,31 +41,38 @@
 
                     <!-- TOP NAV
                     ============================================= -->
-            		<nav class="page-nav">
-            			<span class="page-nav__hamburger">
-            				<i class="fa fa-bars" aria-label="Menu"></i>
-            			</span>
-            			<ul class="page-nav__ul">
-            				<li class="page-nav__li travel-border">
-            					<a href="#services" class="page-nav__item">Travel</a>
-            				</li>
-            				<li class="page-nav__li travel-border">
-            					<a href="#portfolio" class="page-nav__item">Corporate</a>
-            				</li>
-            				<li class="page-nav__li travel-border">
-            					<a href="#blog" class="page-nav__item">Leisure</a>
-            				</li>
-            				<li class="page-nav__li travel-border border-last">
-            					<a href="#contact" class="page-nav__item">Specialty</a>
-            				</li>
-                            <li class="page-nav__li">
-            					<a href="#contact" class="page-nav__item">About Us</a>
-            				</li>
-                            <li class="page-nav__li">
-            					<a href="#contact" class="page-nav__item">Blog</a>
-            				</li>
-            			</ul>
-            		</nav>
+                    <div id="toggle" class="clearfix">
+                        <img src="../images/menu.png" alt="Show" />
+                    </div>
+                        <div id="popout">
+
+                            <!-- Replace this with WP nav code later 
+                                Method 4 here:
+                                http://www.wpbeginner.com/wp-themes/how-to-create-a-mobile-ready-responsive-wordpress-menu/
+                            --> 
+                            <nav class="page-nav">
+                                <ul class="page-nav__ul">
+                                    <li class="page-nav__li travel-border">
+                                        <a href="#services" class="page-nav__item">Travel</a>
+                                    </li>
+                                    <li class="page-nav__li travel-border">
+                                        <a href="#portfolio" class="page-nav__item">Corporate</a>
+                                    </li>
+                                    <li class="page-nav__li travel-border">
+                                        <a href="#blog" class="page-nav__item">Leisure</a>
+                                    </li>
+                                    <li class="page-nav__li travel-border border-last">
+                                        <a href="#contact" class="page-nav__item">Specialty</a>
+                                    </li>
+                                    <li class="page-nav__li">
+                                        <a href="#contact" class="page-nav__item">About Us</a>
+                                    </li>
+                                    <li class="page-nav__li">
+                                        <a href="#contact" class="page-nav__item">Blog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!--/#popout -->
             	</header>
                 <!--/top nav -->
 
@@ -165,6 +172,7 @@
     </footer>
 
 <script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script> <!-- move this into /js/ when /bootstrap/ is deleted -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slidepanel.js"></script>
 </body>
 </html>

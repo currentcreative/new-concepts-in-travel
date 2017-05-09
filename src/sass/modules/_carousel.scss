@@ -45,75 +45,24 @@
     }
 }
 
-/* My Customized ID styles */
+
+/* Bootstrap styles with some modifications */
 .carousel-control.right,
 .carousel-control.left {
-  /* background-image: none !important; */
+  background-image: none !important;  /* grey gradient behind controls */
 }
+
 .carousel-control {
   opacity: 1 !important;
 }
-#homepage-carousel {
-    /*height: 100vh;
-    width: 100%; 
-    overflow: hidden;*/
 
-    /*  @media only screen and (min-width:768px) {
-        height:650px; 
-      }
-      @media only screen and (min-width:1400px) {
-        height: 750px;
-      }
-      */
-}
-
-/* changed images for Carousel to be background images instead 
-.item--customized-1 {
-  height: 650px;
-  background-image: url("/images/homepage-carousel-2.jpg");
-  background-position: center center;
-  background-size: cover;
-      
-      @media only screen and (min-width:1400px) {
-        height: 750px;
-        background-position: center 55%;
-      }   
-}
-
-.item--customized-2 {
-  height: 650px;
-  background-image: url("/images/homepage-carousel-3.jpg");
-  background-position: center center;
-  background-size: cover;
-
-      @media only screen and (min-width:1400px) {
-        height: 750px;
-        background-position: center 55%;
-      }   
-}
-
-.item--customized-3 {
-  height: 650px;
-  background-image: url("/images/homepage-carousel-4.jpg");
-  background-position: center center;
-  background-size: cover;
-
-      @media only screen and (min-width:1400px) {
-        height: 750px;
-        background-position: center 55%;
-      }   
-} */
-
-
-/* Bootstrap styles with some modifications */
 .carousel img {
     min-width: 100%;
 }
 
+/* standard bootstrap carousel begins here */
 .carousel {
   position: relative;
-    
-         /* margin-top: -178px; move up behind the header */
 }
 .carousel-inner {
   position: relative;
@@ -126,11 +75,6 @@
   -webkit-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
-
-        /* customized bit 
-        height:750px; 
-        width: 100%; 
-        overflow: hidden*/
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
