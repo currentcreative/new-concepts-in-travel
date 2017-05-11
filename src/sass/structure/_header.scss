@@ -2,7 +2,22 @@
 //-- Header
 //
 
+/* LOGO */
+#logo {
+    float: left;
+    margin-left: 18px;
+    margin-right: -18px;
+        @media only screen and (max-width: 768px) {
+            margin: 10px 0 5px !important;
+        }
+}
+
 /* SOCIAL */
+.page-header__phone {
+    @media only screen and (max-width: 768px) {
+        display: none !important;
+    }
+}
 .fa-twitter {
     background: #3399FF;
     font-size: 22px !important;
@@ -53,6 +68,14 @@
 	clear:both;
 	padding: 1em;
 }
+.page-header__phone a {
+    text-decoration: none;
+    color: #444;
+}
+.page-header__phone a:hover {
+    color: $color-base;
+    text-decoration: underline;
+}
 
 .page-nav__ul {
   font-size: 0;
@@ -63,6 +86,7 @@
 
     @media only screen and (max-width:768px) {
         display: block;
+        width: 250px;
     }
 }
 
@@ -206,25 +230,37 @@ a.page-nav__item {
         background: rgba(25, 25, 25, .9);
         color: white;
         top: 0px;
-        left: -250px;
+        left: -262px;
         overflow:auto;
-        z-index:1000;
+        z-index:999;
+        -webkit-box-shadow: 4px 0px 12px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 4px 0px 12px 0px rgba(0,0,0,0.5);
+        box-shadow: 4px 0px 12px 0px rgba(0,0,0,0.5);
     }
 
 
     #toggle {
         float: right;
-        position: fixed;
         position: relative;
-        top: 60px;
         top: 0;
-        right: 45px;
         right: 0;
         width: 28px;
         height: 24px;
         cursor: pointer;
         display: block !important;
-        margin-bottom: 20px;
+        margin: 16px 10px 20px 10px;
+    }
+
+    #toggle:before {
+        content: "MENU";
+        position: absolute;
+        left: -42px;
+        top: 10px;
+        font-size: 13px;
+
+            @media only screen and (max-width:358px) {
+                display: none;
+            }
     }
 
     .nav-menu li { 
@@ -242,4 +278,87 @@ a.page-nav__item {
         text-decoration:none;
         width:100%;
     }
+}
+
+
+/* SUBSCRIBE FORM */
+div.subscribe-line-above {
+    height:30px; z-index:2; position: relative; border-top:5px solid #444; margin-bottom: -30px; margin-top: 0; text-align: right;
+
+        @media only screen and (max-width:768px) {
+            background: rgb(189, 235, 248); padding: 4px 0 0; margin-bottom:0; border-top: none; height: auto;
+        }
+}
+
+span.subscribe-wrapper {
+    margin-right: 15px;
+    width:auto; 
+    background: #444; 
+    height:30px; 
+    padding: 15px; 
+    display:inline-block; 
+    width: auto; 
+    color: white;
+
+        @media only screen and (max-width:768px) {
+            width: 100%; margin: 0 auto; background: none; margin-bottom: 0 !important; color: #444; height: auto; clear:both; font-size: 14px; display: block; position: relative; float: left; padding: 18px 15px 10px;
+        }
+        @media only screen and (max-width:480px) {
+            text-align:center; padding:18px 0 10px; 
+        }
+}
+span.subscribe-wrapper:after {
+    content: "";
+    border-left: 16px solid transparent;
+    width: 16px;
+    position: relative;
+    left: -47px;
+    top: -23px;
+    height: 0;
+    border-top: 16px solid #444;
+    background: none;
+    display: block;
+    border-right: 16px solid #444;
+    border-bottom: 16px solid transparent;
+
+        @media only screen and (max-width:768px) {
+            display:none;
+        }
+}
+
+.inputs-nowrap {
+    display: inline-block;
+
+        @media only screen and (max-width:358px) {
+            display: block;
+            margin-top: 8px;
+
+            & input[type=text] {
+                width: 50%;
+            }
+        }
+}
+#NwsLttrFrm {
+    padding: 0 5px; 
+    margin-top:-12px;
+
+        @media only screen and (max-width:358px) {
+            font-size: 15px;
+            font-weight: bold;
+        }
+}
+#NwsLttrFrm input[type=submit] {
+    padding:2px 15px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    background: white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; 
+
+        @media only screen and (max-width:768px) {
+            background: #444; 
+            color: white;
+        }
 }

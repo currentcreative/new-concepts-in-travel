@@ -16,7 +16,7 @@
             }); 
         } else {
             slideoutMenu.animate({
-                left: -slideoutMenuWidth
+                left: -slideoutMenuWidth - 12 /* -12 is the dropshadow I added to #popout */
             }, 250);    
         }
     });
