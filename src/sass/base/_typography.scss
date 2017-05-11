@@ -3,9 +3,23 @@
 //
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #515153;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom:.7em;
+    line-height: 1.35em;
+    color: $color-base;
+}
+
+p {
+    margin-bottom:1.2em;
+    line-height: 1.5em;
+    font-size:1em;
 }
 
 .page-nav {

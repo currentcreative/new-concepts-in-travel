@@ -1,0 +1,27 @@
+//
+//--Sidebar Blog - Latest Posts
+//
+
+.ar-cat-post {
+    display: block;
+    clear:both;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+.ar-cat-thumb {
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.ar-cat-details a {
+    text-decoration: none;
+    color: #515153;
+}
+.ar-cat-details h3 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height:1em;
+    margin:0;
+    padding:0;
+}

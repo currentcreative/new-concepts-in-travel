@@ -299,9 +299,11 @@ span.subscribe-wrapper {
     display:inline-block; 
     width: auto; 
     color: white;
+    border-top: 1px solid #444;
 
         @media only screen and (max-width:768px) {
             width: 100%; margin: 0 auto; background: none; margin-bottom: 0 !important; color: #444; height: auto; clear:both; font-size: 14px; display: block; position: relative; float: left; padding: 18px 15px 10px;
+            border-top: none;
         }
         @media only screen and (max-width:480px) {
             text-align:center; padding:18px 0 10px; 
@@ -313,7 +315,7 @@ span.subscribe-wrapper:after {
     width: 16px;
     position: relative;
     left: -47px;
-    top: -23px;
+    top: -24px;
     height: 0;
     border-top: 16px solid #444;
     background: none;
@@ -341,6 +343,10 @@ span.subscribe-wrapper:after {
 #NwsLttrFrm {
     padding: 0 5px; 
     margin-top:-12px;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering: optimizelegibility;
 
         @media only screen and (max-width:358px) {
             font-size: 15px;
