@@ -2,7 +2,28 @@
 //-- Bootstrap Carousel
 //
 
-/* Carousel Descriptions */
+#carousel-text-overlay {
+  @media only screen and (max-width:768px) {
+    display: none;
+  }
+}
+#carousel-text-under {
+  display: block;
+  text-align: center;
+  background: $color-dark;
+  padding: 15px;
+  @media only screen and (min-width:769px) {
+    display: none;
+  }
+}
+#carousel-text-under h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* Carousel Descriptions  - decided not to use descriptions for now, using one SVG image overlay instead for all images
 .carousel--description-h2 {
     font-size: 2em !important;
     text-align: left !important;
@@ -20,8 +41,9 @@
         font-size: 2.2em !important;
     }
 }
+*/
 
-/* Adjust for Cell Phones */
+/* Adjust for Cell Phones - this was for image descriptions, but it works better without descriptions
 @media only screen and (max-width: 730px) {
 
     .carousel-inner .container {
@@ -44,7 +66,7 @@
         margin-top: 20px !important;
     }
 }
-
+*/
 
 /* Bootstrap styles with some modifications */
 .carousel-control.right,
@@ -68,6 +90,10 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+
+      @media only screen and (max-width:768px) {
+          margin-bottom: -5px;
+      }
 }
 .carousel-inner > .item {
   display: none;
@@ -223,6 +249,10 @@
   padding-left: 0;
   list-style: none;
   text-align: center;
+
+      @media only screen and (max-width: 768px) {
+          left: 11%;
+      }
 }
 .carousel-indicators li {
   display: inline-block;
@@ -235,12 +265,22 @@
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
+
+      @media only screen and (max-width: 480px) {
+          width:8px;
+          height: 8px;
+      }
 }
 .carousel-indicators .active {
   margin: 0;
   width: 12px;
   height: 12px;
   background-color: #ffffff;
+
+      @media only screen and (max-width: 480px) {
+        width:10px;
+        height: 10px;
+      }
 }
 .carousel-caption {
   position: absolute;
