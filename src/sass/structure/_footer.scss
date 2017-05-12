@@ -102,6 +102,9 @@ span.social-wrapper:after {
         display: none !important;
     }
 }
+.fa {
+  cursor: pointer;
+}
 .fa-twitter {
     background: $color-darkest;
     font-size: 20px !important;
@@ -114,6 +117,11 @@ span.social-wrapper:after {
     padding: .25em;
     text-align: center;
     margin-right: 5px;
+
+        @media only screen and (max-width:768px) {
+            background: #3399FF;
+            color: white;
+        }
 }
 
 .fa-facebook {
@@ -128,15 +136,32 @@ span.social-wrapper:after {
     padding: .25em;
     text-align: center;
     margin-right: 5px;
+
+        @media only screen and (max-width:768px) {
+            background: #0066CC;
+            color: white;
+        }
 }
 
 .fa-twitter:hover,
 .fa-facebook:hover {
   background: white;
+
+      @media only screen and (max-width:768px) {
+          background: $color-darkest;
+      }
 }
 .fa-twitter:hover {
   color: #3399FF;
+
+      @media only screen and (max-width:768px) {
+          color: white;
+      }
 }
 .fa-facebook:hover {
   color: #0066CC;
+
+      @media only screen and (max-width:768px) {
+          color: white;
+      }
 }

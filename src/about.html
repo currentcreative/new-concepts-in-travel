@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>New Concepts In Travel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- NOT USING, YOU CAN DELETE BOOTSTRAP CSS OUT OF DIST FOLDER and delete this whole comment... 
+
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> 
+
+    JUST KEEPING BOOTSTRAP FOLDER FOR NOW (in dist folder) because I may need the JS folder for the Carousel stuff when I get around to that... 
+    -->
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/cb95a9eeda.js"></script>
+
+</head>
+<body>
+    <section>
+
+        <div class="container travel-top">
+            <div class='row'>
+
+                <header class="page-header col-md-12">
+
+                    <!-- CONTACT BAR
+                    ============================================= -->
+                    <div class="container">
+                        <div class='row'>
+                            <span class="page-header__phone">
+                                <i class="fa fa-phone" aria-label="Telephone"></i>
+                                    <span>
+                                       <a href="tel:2129442121,2233;isub=2223">212-944-2121 x2233</a>&nbsp;&nbsp;
+                                    </span>
+                                
+                            </span>
+                        
+                            <!-- TOP NAV
+                            ============================================= -->
+                            <div id="logo">
+                                <a href="index.html">
+                                    <img src="../images/logo-ideas-1.png" alt="logo" />
+                                </a>
+                            </div>
+
+                            <div id="toggle">
+                                <img src="../images/menu.png" alt="Show" />
+                            </div>
+
+                            <div id="popout">
+
+                                <!-- Replace this with WP nav code later 
+                                    Method 4 here:
+                                    http://www.wpbeginner.com/wp-themes/how-to-create-a-mobile-ready-responsive-wordpress-menu/
+                                --> 
+                                <nav class="page-nav">
+                                    <ul class="page-nav__ul">
+                                        <li class="page-nav__li travel-border">
+                                            <a href="#" class="page-nav__item">Travel</a>
+                                        </li>
+                                        <li class="page-nav__li travel-border">
+                                            <a href="corporate.html" class="page-nav__item">Corporate</a>
+                                        </li>
+                                        <li class="page-nav__li travel-border">
+                                            <a href="leisure.html" class="page-nav__item">Leisure</a>
+                                        </li>
+                                        <li class="page-nav__li travel-border border-last">
+                                            <a href="specialty.html" class="page-nav__item">Specialty</a>
+                                        </li>
+                                        <li class="page-nav__li">
+                                            <a href="about.html" class="page-nav__item active">About Us</a>
+                                        </li>
+                                        <li class="page-nav__li">
+                                            <a href="#" class="page-nav__item">Blog</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!--/#popout -->
+                        </div><!--/row-->
+                    </div><!--/container-->
+                </header>
+                <!--/top nav -->
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+
+
+        <!-- SUBSCRIBE
+        ============================================= -->
+        <div class="container" style="width:100%;">
+            <div class="row">
+
+                <div class="subscribe-line-above">
+
+                    <div class="container">
+                        <div class="row">
+                            <span class="subscribe-wrapper">
+                                <form action="thanks.asp" method="post" name="NwsLttrFrm" id="NwsLttrFrm">Subscribe to our Newsletter: &nbsp;
+                                    <span class="inputs-nowrap">
+                                    <input name="Email" type="text" class="email" id="Email" placeholder="Email Address" size="15" maxlength="66">
+                                    <input type="submit" value="Join"></span>
+                                </form>
+                            </span>
+                        </div><!--row-->
+                    </div><!--container-->
+
+                </div><!--100% div-->
+                
+            </div><!--row-->
+        </div><!--container-->
+
+
+        
+
+        <!-- OTHER CONTENT
+        ============================================= -->
+        <div class="container">
+            <div class="row">
+                
+                <div class='inner-headers col-md-12'>
+                    <h1>About Us</h1>
+                    <img src="images/about-us.jpg" alt="image of Venice, Italy and the beach" width="100%">
+                </div>
+
+                <div class="inner-main-content col-md-8">
+                     <p>
+                         <strong>New Concepts Travel</strong> was founded in 1995 by Veronica Jimenez, an experienced travel professional who's been in the industry for more than 20 years.
+                     </p>
+                     <p>
+                         New Concepts Travel is dedicated to giving clients the insight and service they need to maximize corporate travel savings, plan meetings and conferences, and enjoy spectacular vacations. We have first-hand knowledge of the world's top destinations, and we can customize a program or itinerary to suit all tastes and budgets. Our experienced travel professionals will coordinate every aspect of each trip, and they're available 24 hours a day.
+                     </p>
+                     <p>
+                         New Concepts Travel is an affiliate of the Tzell Travel group which is ranked as the Number #1 Travel company by BTN (Business Travel News) this year.
+                     </p>
+                     <h3>About Veronica Jimenez</h3>
+                     <p>
+                         For New Concepts Travel founder and President Veronica Jimenez, travel is a family business. She began her career in the airline industry, working at a major carrier for 6 years before taking a job at one of New York's leading travel agencies. She was eventually promoted to a senior management position, in charge of both wholesale and retail travel. In 1995, Veronica left to establish New Concepts Travel and bring her expertise to a broad range of corporate and individual clients.
+                     </p>
+                </div>
+
+                <div class="inner-sidebar col-md-4">
+                    <!-- SEARCH
+                    ============================================= -->
+                    <form role="search" method="get" class="search-form" action="#">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+                    
+                    
+                </div><!--/col-md-4 -->
+
+            </div><!--/.row -->
+        </div><!--/.container -->
+
+    </section>
+
+        
+
+    <!-- FOOTER
+    ============================================= -->
+    <footer class="col-md-12">
+
+        <!-- SOCIAL
+        ============================================= -->
+        <div class="container" style="width:100%;">
+            <div class="row">
+
+                <div class="social-line-below" style="width:100%">
+                    <div class="container">
+                        <div class="row">
+                            <span class="social-wrapper">
+                                Follow us online: &nbsp;
+                                <a href="https://twitter.com/NCTveronica" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/NewConceptsInTravel/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </span>
+                        </div><!--row-->
+                    </div><!--container-->
+                </div><!--social-line-below / 100% div-->
+                
+            </div><!--row-->
+        </div><!--container-->
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-content col-md-12">
+                    <p>119 West 40th St, 14th FL | New York, NY 10018</p>
+                    <p>tel: (212) 944-2121 x2233 | fax: (212) 944-7100 | email: <a href="mailto:vjimenez@tzell.com">vjimenez@tzell.com</a><span style="float:right;">Site by <a href="https://www.22graphics.com" target="_blank">22</a>.</span></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slidepanel.js"></script>
+</body>
+</html>
